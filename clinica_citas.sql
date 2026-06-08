@@ -42,8 +42,8 @@ CREATE TABLE `clientes` (
 --
 
 INSERT INTO `clientes` (`id_cliente`, `nombre`, `email`, `opcion`, `fecha`, `medico`, `hora`) VALUES
-(25, 'Lola Pérez', NULL, 'cita', '0000-00-00', 'Dr. García', '10:00:00'),
-(59, 'Pepa Navarro', 'deliagallardopastor@hotmail.com', 'cita', '2026-04-29', 'Dra. Gallardo', '12:00:00');
+(25, 'Lola Pérez', 'lola@email.com', 'cita', '2026-05-10', 'Dr. García', '10:00:00');
+(59, 'Pepa Navarro', 'pepa@email.com'', 'cita', '2026-04-29', 'Dra. Martínez', '12:00:00');
 
 --
 -- Índices para tablas volcadas
