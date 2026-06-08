@@ -17,14 +17,13 @@ function enviarCorreo($email, $nombre, $fecha, $hora, $medico){
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
-        $mail->Username = 'correo@ejemplo.com';
-
-        $mail->Password = 'PASSWORD_AQUI';
+       $mail->Username = 'TU_CORREO_SMTP';
+       $mail->Password = 'TU_PASSWORD_SMTP';
 
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        $mail->setFrom('clinicasaludplus@gmail.com', 'Clinica SaludPlus');
+        $mail->setFrom('correo@ejemplo.com', 'Clinica SaludPlus');
 
         $mail->addAddress($email);
 
