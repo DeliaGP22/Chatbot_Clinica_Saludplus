@@ -1,20 +1,35 @@
 # 🏥 Chatbot Clínica SaludPlus
 
-Sistema web desarrollado en PHP y MySQL para la gestión de citas médicas.
+Sistema web para la gestión de citas médicas desarrollado en PHP y MySQL.
 
-## 📋 Descripción
+Este proyecto permite a los pacientes solicitar citas de forma sencilla mediante un chatbot interactivo y ofrece un panel de administración para gestionar las reservas realizadas.
 
-Este proyecto permite a los usuarios reservar citas médicas de forma sencilla mediante una interfaz web. Además, incorpora un panel de administración para gestionar las citas registradas y un sistema de envío de correos electrónicos de confirmación utilizando PHPMailer.
+---
 
-## ✨ Funcionalidades
+## 🚀 Funcionalidades
 
-- Reserva de citas médicas.
-- Almacenamiento de citas en MySQL.
+### Pacientes
+- Solicitud de citas mediante chatbot.
+- Selección de médico y horario.
+- Confirmación automática de la reserva.
+- Información de contacto de la clínica.
+- Consulta de horarios de atención.
+- Interfaz intuitiva y responsive.
+
+### Administración
 - Inicio de sesión para administrador.
-- Panel de administración.
-- Gestión de pacientes y citas.
-- Envío de correos de confirmación mediante PHPMailer.
-- Interfaz sencilla y responsive.
+- Gestión de citas registradas.
+- Edición y eliminación de reservas.
+- Búsqueda de pacientes y médicos.
+- Estadísticas básicas de citas.
+- Integración con Google Calendar.
+
+### Sistema
+- Almacenamiento de datos en MySQL.
+- Envío de correos electrónicos mediante PHPMailer.
+- Arquitectura sencilla orientada a proyectos académicos.
+
+---
 
 ## 🛠️ Tecnologías utilizadas
 
@@ -22,54 +37,115 @@ Este proyecto permite a los usuarios reservar citas médicas de forma sencilla m
 - MySQL
 - HTML5
 - CSS3
+- JavaScript
 - PHPMailer
 - XAMPP
 
-## 🚀 Instalación
+---
 
-1. Clonar el repositorio:
+## 📸 Capturas del proyecto
+
+### Chatbot principal
+
+![Chatbot principal](screenshots/home.jpg)
+
+### Solicitud de cita
+
+![Solicitud de cita](screenshots/solicitar-cita.jpg)
+
+### Confirmación de cita
+
+![Confirmación](screenshots/confirmacion-cita.jpg)
+
+### Información de contacto
+
+![Contacto](screenshots/contacto.jpg)
+
+### Horario de atención
+
+![Horario](screenshots/horario.jpg)
+
+### Panel de administración
+
+![Panel de administración](screenshots/panel-administracion.jpg)
+
+### Base de datos MySQL
+
+![Base de datos](screenshots/base-datos.jpg)
+
+---
+
+## ⚙️ Instalación
+
+### 1. Clonar repositorio
 
 ```bash
-git clone https://github.com/DeliaGP22/Chatbot-Clinica-Saludplus.git
+git clone https://github.com/DeliaGP22/Chatbot_Clinica_Saludplus.git
 ```
 
-2. Copiar la carpeta del proyecto en `htdocs`.
+### 2. Copiar proyecto
 
-3. Iniciar Apache y MySQL desde XAMPP.
+Mover la carpeta al directorio:
 
-4. Importar la base de datos:
-
-- Abrir phpMyAdmin.
-- Crear una base de datos llamada:
-
-```
-clinica_citas
+```text
+xampp/htdocs/
 ```
 
-- Importar el archivo:
+### 3. Iniciar servicios
 
-```
+Abrir XAMPP e iniciar:
+
+- Apache
+- MySQL
+
+### 4. Importar base de datos
+
+Abrir phpMyAdmin e importar:
+
+```text
 clinica_citas.sql
 ```
 
-5. Acceder a la aplicación:
+### 5. Configurar correo
 
+Editar:
+
+```text
+email.php
 ```
+
+Introduciendo las credenciales SMTP correspondientes.
+
+### 6. Ejecutar aplicación
+
+Abrir en el navegador:
+
+```text
 http://localhost/chatbot-clinica/
 ```
 
-## 📧 Configuración de correo
+---
 
-Por motivos de seguridad, las credenciales SMTP no se incluyen en este repositorio.
+## 📚 Aprendizajes
 
-Para habilitar el envío de correos es necesario configurar las credenciales de Gmail en:
+Durante el desarrollo de este proyecto se han trabajado conceptos como:
 
-```
-email.php
-```
+- Desarrollo web con PHP.
+- Gestión de bases de datos MySQL.
+- Programación orientada a la interacción con usuarios.
+- Integración de envío de correos.
+- Gestión CRUD de registros.
+- Organización de proyectos completos Full Stack.
+
+---
 
 ## 👩‍💻 Autor
 
 **Delia Gallardo Pastor**
 
-Proyecto desarrollado como práctica de Desarrollo de Aplicaciones Multiplataforma (DAM).
+Desarrolladora de Aplicaciones Multiplataforma (DAM)
+
+- GitHub: https://github.com/DeliaGP22
+- LinkedIn: https://www.linkedin.com/in/delia-gallardo-pastor-b3863a331/
+
+Proyecto realizado como práctica del ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM).
