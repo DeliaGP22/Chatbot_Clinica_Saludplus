@@ -1,33 +1,23 @@
 # 🏥 Chatbot Clínica SaludPlus
 
-Sistema web para la gestión de citas médicas desarrollado en PHP y MySQL.
+Sistema web para gestión de citas médicas desarrollado en PHP y MySQL.
 
-Este proyecto permite a los pacientes solicitar citas de forma sencilla mediante un chatbot interactivo y ofrece un panel de administración para gestionar las reservas realizadas.
+Este proyecto permite a los usuarios solicitar citas médicas mediante una interfaz tipo chatbot, facilitando la gestión de pacientes, horarios y consultas de forma sencilla e intuitiva.
 
 ---
 
 ## 🚀 Funcionalidades
 
-### Pacientes
-- Solicitud de citas mediante chatbot.
-- Selección de médico y horario.
-- Confirmación automática de la reserva.
-- Información de contacto de la clínica.
+- Solicitud de citas médicas mediante chatbot.
+- Registro automático de pacientes.
+- Gestión de citas en base de datos MySQL.
+- Confirmación de citas mediante correo electrónico.
 - Consulta de horarios de atención.
-- Interfaz intuitiva y responsive.
-
-### Administración
-- Inicio de sesión para administrador.
-- Gestión de citas registradas.
-- Edición y eliminación de reservas.
-- Búsqueda de pacientes y médicos.
-- Estadísticas básicas de citas.
+- Información de contacto de la clínica.
+- Panel de administración para gestionar citas.
 - Integración con Google Calendar.
-
-### Sistema
-- Almacenamiento de datos en MySQL.
-- Envío de correos electrónicos mediante PHPMailer.
-- Arquitectura sencilla orientada a proyectos académicos.
+- Búsqueda de pacientes y citas.
+- Interfaz responsive y fácil de usar.
 
 ---
 
@@ -45,33 +35,59 @@ Este proyecto permite a los pacientes solicitar citas de forma sencilla mediante
 
 ## 📸 Capturas del proyecto
 
-### Chatbot principal
+### Página principal
 
-![Chatbot principal](screenshots/home.jpg)
+![Página principal](Home.jpg)
+
+Interfaz inicial del chatbot con acceso a solicitud de citas, información de contacto y horarios.
+
+---
 
 ### Solicitud de cita
 
-![Solicitud de cita](screenshots/solicitar-cita.jpg)
+![Solicitud de cita](Pedir-cita.jpg)
+
+Formulario conversacional donde el usuario introduce sus datos para reservar una cita médica.
+
+---
 
 ### Confirmación de cita
 
-![Confirmación](screenshots/confirmacion-cita.jpg)
+![Confirmación](confirmacion-cita.jpg)
+
+Resumen final de la cita reservada y confirmación del envío por correo electrónico.
+
+---
 
 ### Información de contacto
 
-![Contacto](screenshots/contacto.jpg)
+![Contacto](contacto.jpg)
+
+Pantalla con los datos de contacto de la clínica.
+
+---
 
 ### Horario de atención
 
-![Horario](screenshots/horario.jpg)
+![Horario](horario.jpg)
+
+Consulta rápida de horarios disponibles.
+
+---
 
 ### Panel de administración
 
-![Panel de administración](screenshots/panel-administracion.jpg)
+![Panel de administración](panel-administracion.jpg)
+
+Zona privada para la gestión de citas médicas, edición y eliminación de registros.
+
+---
 
 ### Base de datos MySQL
 
-![Base de datos](screenshots/base-datos.jpg)
+![Base de datos](tabla-clientes.jpg)
+
+Almacenamiento de pacientes y citas mediante MySQL.
 
 ---
 
@@ -83,22 +99,15 @@ Este proyecto permite a los pacientes solicitar citas de forma sencilla mediante
 git clone https://github.com/DeliaGP22/Chatbot_Clinica_Saludplus.git
 ```
 
-### 2. Copiar proyecto
+### 2. Copiar el proyecto
 
 Mover la carpeta al directorio:
 
 ```text
-xampp/htdocs/
+C:\xampp\htdocs\
 ```
 
-### 3. Iniciar servicios
-
-Abrir XAMPP e iniciar:
-
-- Apache
-- MySQL
-
-### 4. Importar base de datos
+### 3. Importar la base de datos
 
 Abrir phpMyAdmin e importar:
 
@@ -106,7 +115,17 @@ Abrir phpMyAdmin e importar:
 clinica_citas.sql
 ```
 
-### 5. Configurar correo
+### 4. Configurar conexión
+
+Editar:
+
+```text
+config/conexion.php
+```
+
+y establecer los parámetros de conexión correspondientes.
+
+### 5. Configurar correo electrónico
 
 Editar:
 
@@ -114,11 +133,13 @@ Editar:
 email.php
 ```
 
-Introduciendo las credenciales SMTP correspondientes.
+y añadir las credenciales SMTP necesarias para el envío de correos.
 
-### 6. Ejecutar aplicación
+### 6. Ejecutar el proyecto
 
-Abrir en el navegador:
+Iniciar Apache y MySQL desde XAMPP.
+
+Acceder a:
 
 ```text
 http://localhost/chatbot-clinica/
@@ -128,24 +149,23 @@ http://localhost/chatbot-clinica/
 
 ## 📚 Aprendizajes
 
-Durante el desarrollo de este proyecto se han trabajado conceptos como:
+Este proyecto fue desarrollado como práctica del ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM), aplicando conocimientos de:
 
-- Desarrollo web con PHP.
-- Gestión de bases de datos MySQL.
-- Programación orientada a la interacción con usuarios.
-- Integración de envío de correos.
-- Gestión CRUD de registros.
-- Organización de proyectos completos Full Stack.
+- Programación web con PHP.
+- Bases de datos relacionales con MySQL.
+- Gestión de formularios.
+- Envío de correos electrónicos con PHPMailer.
+- Diseño de interfaces web.
+- Arquitectura básica cliente-servidor.
 
 ---
 
-## 👩‍💻 Autor
+## 👩‍💻 Autora
 
 **Delia Gallardo Pastor**
 
-Desarrolladora de Aplicaciones Multiplataforma (DAM)
+Desarrolladora de Aplicaciones Multiplataforma Junior.
 
 - GitHub: https://github.com/DeliaGP22
 - LinkedIn: https://www.linkedin.com/in/delia-gallardo-pastor-b3863a331/
 
-Proyecto realizado como práctica del ciclo de Desarrollo de Aplicaciones Multiplataforma (DAM).
